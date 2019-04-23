@@ -1,5 +1,6 @@
 import React from "react";
 import "./style.css";
+// import Counter from "../Counter/Counter";
 
 function FriendCard(props) {
   return (
@@ -19,9 +20,13 @@ function FriendCard(props) {
             <strong>Location:</strong> {props.location}
           </li>
         </ul>
+     
       </div>
       <span onClick={() => props.removeFriend(props.id)} className="remove">
         𝘅
+      </span>
+      <span onClick={() => props.handleIncrement(props.id)} className="gainz">
+        +
       </span>
     </div>
   );

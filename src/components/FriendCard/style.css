@@ -1,5 +1,5 @@
 .card {
-  background: #fff;
+  background: rgb(189, 185, 185);
   border-radius: 2px;
   height: 325px;
   margin: 1rem;
@@ -7,13 +7,14 @@
   width: 325px;
   box-shadow: 0 3px 6px #999, 0 3px 6px #999;
   text-align: left;
+  text-decoration: #19be50;
 }
 
 .card > .img-container {
   height: 60%;
   overflow: hidden;
   text-align: center;
-  background:#6CADDC;
+  background:rgba(108, 173, 220, 0.541);
 }
 .card > .img-container > img {
   width: 60%
@@ -32,16 +33,33 @@
 .card > .content > ul > li {
   margin-top: 18px;
 }
-
 .card > .remove {
   color: #ff1744;
-  font-size: 48px;
+  font-size: 25px;
   position: absolute;
-  top: -20px;
+  top: 0px;
   right: 5px;
+  cursor: pointer;
+}
+
+.card > .gainz {
+  color:rgb(19, 122, 19);
+  font-size: 25px;
+  position: absolute;
+  top: 0px;
+  right: 20px;
   cursor: pointer;
 }
 
 .card > .remove:hover {
   color: #d50000;
 }
+.card > .gainz:hover {
+  color: #19be50;
+}
+
+/* .buttonz{
+  max-height: 25px;
+  max-width: 50px;
+  box-shadow: 0 3px 6px #999, 0 3px 6px #999;
+} */
